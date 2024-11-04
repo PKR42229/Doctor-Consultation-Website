@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="icon" type="icon/x-icon" href="doclogo.png">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+   <!--google font-->
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --black:black;
+    --purple: purple;
+    --light-color:#666;
+    --box-shadow: 0  .5rem 1.5rem rgba(0,0,0,.1);
+}
+*{
+    font-family: 'andika';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+body{
+    background: #fff;
+
+}
+/*header*/
+
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    align-items: center;
+    border: 1px solid;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    padding-top: 15px;
+}
+
+.header .logo img{
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+    display: inline-block;
+}
+.header .headbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+.header .headbar a:hover{
+    color: #fff;
+    background: linear-gradient(120deg,#49ff20 40%,#5d5d5d47);
+}
+.header .menubtn{
+    margin-right: 60px;
+}
+.header .menubtn {
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+    border: none;
+    background-image: linear-gradient(120deg,#49ff20 40%,#5d5d5d47);
+    border-radius: 10px;
+}
+.header .menubtn a{
+    color: white;
+    text-decoration: none;
+}
+/*header*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://your-background-image-url.com');
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 20px;
+    color: #666;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus {
+    border-color: #e0e2e4;
+}
+
+.btn {
+    background-color: #0dff00;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #37ff00;
+}
+
+.signin-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signin-link a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+.button .btn a{
+    color:white;
+    text-decoration: none;
+}
+
+   </style>
+</head>
+<body>
+    <script>
+        function sub(){
+            var a=document.getElementById('Name').value;
+            var b=document.getElementById('email').value;
+            var c=document.getElementById('password').value;
+            if(a=="" || b=="" || c=="" ){
+                alert("All fields are mandatory");
+                return false;
+            }
+            else{
+                return true; 
+            }
+        }
+    </script>
+    <!--header-->
+    <header class="header">
+        <a class="logo">
+            <img src="./doclogo.png">
+        </a>
+        <!--nav bar-->
+        <nav class="headbar">
+            <a href="home.html">HOME</a>
+            <a href="login.html">LOGIN</a>
+            <a href="signup.html">SIGN UP</a>
+            <a href="doc.html">DOCTORS</a>
+            <a href="medi.html">MEDICINES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <!--nav bar-->
+         <div class="menubtn">
+            <a href="helpline.html" >Helpline</a>
+            </div>
+    </header>
+    <!--header-->
+    <div class="signup-container">
+        <div class="form-box">
+            <h2>LOGIN NOW !</h2>
+            <form onsubmit="return sub()" action="home.html" method="POST" class="signup-form">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <!--<p class="signin-link">Already have an account? <a href=".html">LOG-IN</a></p>-->
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

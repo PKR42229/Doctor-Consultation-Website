@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="icon" type="icon/x-icon" href="doclogo.png">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--google font-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --black:black;
+    --purple: purple;
+    --light-color:#666;
+    --box-shadow: 0  .5rem 1.5rem rgba(0,0,0,.1);
+}
+*{
+    font-family: 'andika';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+body{
+    background: #fff;
+
+}
+/*header*/
+
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    align-items: center;
+    border: 1px solid;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    padding-top: 15px;
+}
+
+.header .logo img{
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+    display: inline-block;
+}
+.header .headbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+.header .headbar a:hover{
+    color: #fff;
+    background: linear-gradient(120deg,#49ff20 40%,#5d5d5d47);
+}
+.header .menubtn{
+    margin-right: 60px;
+}
+.header .menubtn {
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+    border: none;
+    background-image: linear-gradient(120deg,#49ff20 40%,#5d5d5d47);
+    border-radius: 10px;
+}
+.header .menubtn a{
+    color: white;
+    text-decoration: none;
+}
+/*header*/
+
+/* About Us section */
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    padding: 40px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 150px;
+    border: 1px solid greenyellow;
+}
+
+.image-container img {
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+     <!--header-->
+     <header class="header">
+        <a class="logo">
+            <img src="./doclogo.png">
+        </a>
+        <!--nav bar-->
+        <nav class="headbar">
+            <a href="home.html">HOME</a>
+            <a href="login.html">LOGIN</a>
+            <a href="signup.html">SIGN UP</a>
+            <a href="doc.html">DOCTORS</a>
+            <a href="medi.html">MEDICINES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <!--nav bar-->
+        <div class="menubtn">
+            <a href="helpline.html" >Helpline</a>
+            </div>
+
+    </header>
+    <!--header-->
+
+    <section class="about-us">
+        <div class="image-container">
+            <img src="./aboutimg.jpg" alt="Doctor">
+        </div>
+        <div class="content">
+            <h1>About Us</h1>
+           <p>About Us
+
+            Welcome to <strong><b>HEALTH BRIDGE</b></strong>, your trusted partner in health and well-being. We are dedicated to providing accessible, reliable, and expert medical consultation from the comfort of your home. Our platform connects you with experienced doctors across various specialties, ensuring that you receive personalized care tailored to your needs.
+            
+            At <strong><b>HEALTH BRIDGE</b></strong>, we believe that healthcare should be simple and accessible for everyone. Whether you need advice for managing a chronic condition, a second opinion, or guidance on your health concerns, our expert medical professionals are here to help. Our goal is to empower you with the right information, offering consultations that promote peace of mind and help you make informed decisions about your health.
+            
+            Why Choose Us?
+            
+            Experienced Professionals: Our team of doctors includes specialists across a wide range of fields, ensuring comprehensive care.
+            Convenience: Get medical advice from the comfort of your home without waiting in long lines.
+            Confidentiality: Your health information is protected with the highest standards of privacy and security.
+            Personalized Care: Every consultation is customized to meet your individual health needs.
+            Accessible 24/7: No matter where you are or when you need us, our services are always available.
+            Your health is our priority. Let us help you on your journey to better well-being with expert guidance, trusted advice, and compassionate care.</p>
+        </div>
+    </section>
+</body>
+</html>

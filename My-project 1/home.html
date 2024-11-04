@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="icon" type="icon/x-icon" href="doclogo.png">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--google font-->
+     <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --black:black;
+    --purple: purple;
+    --light-color:#666;
+    --box-shadow: 0  .5rem 1.5rem rgba(0,0,0,.1);
+}
+*{
+    font-family: 'andika';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+body{
+    background: #fff;
+
+}
+/*header*/
+
+.header{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    align-items: center;
+    border: 1px solid;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    padding-top: 15px;
+}
+
+.header .logo img{
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+    display: inline-block;
+}
+.header .headbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+.header .headbar a:hover{
+    color: #fff;
+    background: linear-gradient(120deg,#49ff20 40%,#5d5d5d47);
+}
+.header .menubtn{
+    margin-right: 60px;
+}
+.header .menubtn {
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+    border: none;
+    background-image: linear-gradient(120deg,#49ff20 40%,#5d5d5d47);
+    border-radius: 10px;
+}
+.header .menubtn a{
+    color: white;
+    text-decoration: none;
+}
+/*header*/
+/*main*/
+.bss {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    background-color: #fff;
+    margin-top: 2px;
+
+}
+
+
+.bss-c img {
+    
+    margin-left: 60px;
+}
+.bss-c h3 {
+    font-size: 18px;
+    color: #5e5e5e;
+    margin-left: 200px;
+    margin-bottom: 5px;
+}
+.bss-c h2 {
+    font-size: 36px;
+    color: #333;
+    margin-left: 100px;
+
+}
+
+.bss-c p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #666;
+    margin-left: 100px;
+
+}
+
+.appointment-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(120deg,#49ff20 40%,#5d5d5d47) ;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 200px;
+
+}
+
+.hero-image img {
+    width: 700px;
+    height: 400px;
+    display: flex;
+}
+
+/*main*/
+     </style>
+
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <a class="logo">
+            <img src="./doclogo.png">
+        </a>
+        <!--nav bar-->
+        <nav class="headbar">
+            <a href="home.html">HOME</a>
+            <a href="login.html">LOGIN</a>
+            <a href="signup.html">SIGN UP</a>
+            <a href="doc.html">DOCTORS</a>
+            <a href="medi.html">MEDICINES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+           
+        </nav>
+        <!--nav bar-->
+        <div class="menubtn">
+            <a href="helpline.html" >Helpline</a>
+            </div>
+
+    </header>
+    <!--header-->
+
+    <!--main-->
+    <section class="bss">
+        <div class="bss-c">
+            <img src="./doclogo.png">
+            <h3>We Are Here For You</h3>
+            <h2>We Are The Best Pharmacy</h2>
+            <p>We are here for your care 24/7. Any help, just call us.</p>
+            <a href="appointment.html" class="appointment-btn">Make an appointment</a>
+        </div>
+        <div class="hero-image">
+            <img src="./doctor.jpg">
+        </div>
+    </section>
+    <!--main-->
+    
+</body>
+</html>
